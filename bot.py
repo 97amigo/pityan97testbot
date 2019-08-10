@@ -25,7 +25,7 @@ def send_welcome(message):
 
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
-    for i in range(5):
-        bot.send_audio(chat_id = message.chat.id, audio = vk_case(i, message.text))
+    for i in range(int(message.text.split()[1])):
+        bot.send_audio(chat_id = message.chat.id, audio = vk_case(i, message.text.split()[0]))
 
 bot.polling()
