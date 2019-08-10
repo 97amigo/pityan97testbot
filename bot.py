@@ -14,7 +14,7 @@ def vk_case(i, id):
 
     return (vk_audio.get(owner_id = int(id))[i]['url'])
 
-Pityan97TestBot_TOKEN = '627705501:AAGWDEfxjGpITUOGz7RHwW-bKPHqECCE3UI'
+Pityan97TestBot_TOKEN = '627705501:AAEvLXLycmen-FDNlsSbMlni5vWOdepQoY0'
 
 bot = telebot.TeleBot(Pityan97TestBot_TOKEN)
 
